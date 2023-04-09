@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    td,
+    th {
+        padding: 15px;
+    }
+</style>
+
+<body>
+    <fieldset>
+        <legend>Enregistrement d'un testeur</legend>
+        <form action="enregistrement.php" method="post" name="f1">
+            <table>
+                <tr>
+                    <th>N° Permis</th>
+                    <td><input type="text" name="permis" id=""></td>
+                </tr>
+                <tr>
+                    <th>Nom : </th>
+                    <td><input type="text" name="nom" id=""></td>
+                </tr>
+                <tr>
+                    <th>Prenom : </th>
+                    <td><input type="text" name="prenom" id=""></td>
+                </tr>
+                <tr>
+                    <th>Genre</th>
+                    <td><input type="radio" name="genre" id="" value="F">Feminin<input type="radio" name="genre" id="" value="M">Masculin</td>
+                </tr>
+                <tr>
+                    <th><input type="reset" value="Annuler"></th>
+                    <th><input type="submit" value="Ajouter" onclick="return verif1()"></th>
+                </tr>
+            </table>
+
+        </form>
+    </fieldset>
+
+    <script src="controle.js"></script>
+</body>
+
+</html>
